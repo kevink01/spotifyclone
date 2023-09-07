@@ -8,8 +8,16 @@ export default function Document() {
 			<Head />
 			<body>
 				<ColorModeScript initialColorMode={theme.config.initialColorMode} />
-				<Main />
 				<NextScript />
+				<div className='container'>
+					<div id='sidebar'>
+						<div className='sidebar-content'>Hello</div>
+					</div>
+					<div id='resize'></div>
+					<div id='main'>
+						<Main />
+					</div>
+				</div>
 			</body>
 		</Html>
 	);

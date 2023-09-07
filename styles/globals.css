@@ -1,0 +1,35 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	background: blue;
+	width: 100vw;
+	height: 100vh;
+}
+
+#sidebar {
+	display: flex;
+	flex-grow: 1;
+	border: 1px solid red;
+	resize: horizontal;
+	overflow: auto;
+}
+
+.sidebar-content {
+	flex-grow: 1;
+	padding: 1rem;
+}
+
+#resize {
+	width: 4px;
+	cursor: col-resize;
+
+	&:hover {
+		background: gray;
+	}
+}
+
+#main {
+	flex-grow: 3;
+	border: 1px solid main;
+	padding: 1rem;
+}
